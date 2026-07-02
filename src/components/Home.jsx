@@ -11,7 +11,10 @@ import pic from "../assets/Aditi.JPG";
 const Home = () => {
   return (
     <>
-      <div name="Home" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20">
+      <div
+        name="Home"
+        className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20"
+      >
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1">
             <span className="text-xl">Welcome In My Feed</span>
@@ -38,39 +41,42 @@ const Home = () => {
             </p>
             <br />
             {/* Social Media Icons */}
-            <div className="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 ">
-              <div className="space-y-2">
+            {/* Social Media Icons */}
+            <div className="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+              <div className="space-y-2 flex flex-col items-center">
                 <h1 className="font-bold">Available on</h1>
-                <ul className="flex space-x-5 ">
+
+                <ul className="flex justify-center space-x-5">
                   <li>
-                    {" "}
                     <a
-                      href="https://www.linkedin.com/in/aditi-andhale-84a7a620b/e"
+                      href="https://www.linkedin.com/in/aditi-andhale-84a7a620b/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <FaLinkedin className="text-2xl cursor-pointer" />
+                      <FaLinkedin className="text-2xl cursor-pointer hover:scale-110 duration-200" />
                     </a>
                   </li>
+
                   <li>
-                    {" "}
                     <a
                       href="https://github.com/aditiandhale"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <FaGithub className="text-2xl cursor-pointer" />
+                      <FaGithub className="text-2xl cursor-pointer hover:scale-110 duration-200" />
                     </a>
                   </li>
                 </ul>
               </div>
-              <div className="space-y-2">
+
+              <div className="space-y-2 flex flex-col items-center">
                 <h1 className="font-bold">Currently working on</h1>
-                <div className="flex space-x-5">
-                  <SiMongodb className="text-xl md: text-3xl hover: scale-110 duration-200 rounded-full border-[2px]" />
-                  <SiExpress className="text-xl md: text-3xl hover: scale-110 duration-200 rounded-full border-[2px]" />
-                  <FaReact className="text-xl md: text-3xl hover: scale-110 duration-200 rounded-full border-[2px]" />
-                  <FaNodeJs className="text-xl md: text-3xl hover: scale-110 duration-200 rounded-full border-[2px]" />
+
+                <div className="flex justify-center space-x-5">
+                  <SiMongodb className="text-3xl hover:scale-110 duration-200 rounded-full border-2" />
+                  <SiExpress className="text-3xl hover:scale-110 duration-200 rounded-full border-2" />
+                  <FaReact className="text-3xl hover:scale-110 duration-200 rounded-full border-2" />
+                  <FaNodeJs className="text-3xl hover:scale-110 duration-200 rounded-full border-2" />
                 </div>
               </div>
             </div>
