@@ -1,11 +1,11 @@
 import React from "react";
-import react from "../../public/reactjs.png";
-import javascript from "../../public/javascript.png";
-import html from "../../public/html.png";
-import css from "../../public/css.png";
-import mysql from "../../public/mysql.png";
-import mongodb from "../../public/mongodb.jpg";
-import postman from "../../public/postman.png";
+import react from "../assets/reactjs.png";
+import javascript from "../assets/javascript.png";
+import html from "../assets/html.png";
+import css from "../assets/css.png";
+import mysql from "../assets/mysql.png";
+import mongodb from "../assets/mongodb.jpg";
+import postman from "../assets/postman.png";
 
 const Experience = () => {
   const cardItems = [

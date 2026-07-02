@@ -6,7 +6,7 @@ import { SiExpress } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa6";
 import { ReactTyped } from "react-typed";
-import pic from "../../public/Aditi.jpg";
+import pic from "../assets/Aditi.jpg";
 
 const Home = () => {
   return (
