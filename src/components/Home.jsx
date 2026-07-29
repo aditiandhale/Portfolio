@@ -13,7 +13,7 @@ const Home = () => {
     <>
       <div
         name="Home"
-        className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20"
+        className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20 justify-center"
       >
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1">
@@ -81,11 +81,14 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 md:ml-48 md:mt-20 mt-8 order-1">
+          <div className="md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-20 order-1">
             <img
               src={pic}
-              className="md: h-[450px] md: w-[450px]  rounded-full "
-              alt=""
+              alt="Aditi"
+              className="w-64 h-64 sm:w-72 sm:h-72 md:w-[450px] md:h-[450px]
+               rounded-full object-contain
+               transition-all duration-300"
+              draggable={false}
             />
           </div>
         </div>

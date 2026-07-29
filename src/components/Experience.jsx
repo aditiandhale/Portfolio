@@ -49,23 +49,29 @@ const Experience = () => {
   return (
     <div
       name="Experience"
-      className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16"
+      className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16 justify-center"
     >
       <div>
         <h1 className="text-3xl font-bold mb-5">Experience</h1>
         <p className="  ">
           I've more than 3+ years of experiance in below technologies.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-7 my-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-6">
           {cardItems.map(({ id, logo, name }) => (
             <div
-              className=" flex flex-col items-center justify-center border-[2px] rounded-full md:w-[200px] md:h-[200px] shadow-md p-1 cursor-pointer hover:scale-110 duration-300"
               key={id}
+              className="flex flex-col items-center justify-center
+                 border-2 rounded-2xl shadow-md
+                 w-full h-40 md:h-52
+                 p-4
+                 hover:scale-105 transition duration-300"
             >
-              <img src={logo} className="w-[150px] rounded-full" alt="" />
-              <div>
-                <div className="">{name}</div>
-              </div>
+              <img
+                src={logo}
+                alt={name}
+                className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 object-contain"
+              />
+              <h3 className="mt-3 text-center font-medium">{name}</h3>
             </div>
           ))}
         </div>

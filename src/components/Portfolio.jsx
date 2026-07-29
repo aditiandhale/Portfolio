@@ -39,7 +39,7 @@ const Portfolio = () => {
         <span className="underline font-semibold">Featured Projects</span>{" "}
       </div>{" "}
       {/* Add this grid wrapper */}{" "}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6" >
         {" "}
         {projects.map(({ id, name, description }) => (
           <div
